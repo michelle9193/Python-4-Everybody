@@ -1,2 +1,2 @@
-# Python-4-Everybody
+# Scientific-Computing-with-Python
 FreeCodeCamp course - Scientific Computing with Python
