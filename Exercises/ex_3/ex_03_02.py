@@ -2,11 +2,19 @@
 # program handles non-numeric input gracefully by printing a message
 # and exiting the program.
 
-enter_hours = input('Enter hours: ')
-enter_rate = input('Enter rate: ')
+hours = input('Enter hours: ')
+rate = input('Enter rate: ')
 try:
-    hours = float(enter_hours)
-    rate = float(enter_rate)
-    print(hours * rate)
+    fh = float(hours)
+    fr = float(rate)
 except:
-    print('Please enter a number')
+    print('Error, please enter numeric input')
+    quit()
+
+if fh > 40:
+    reg = fh * fr
+    otp = (fh - 40.0) * (fr * 0.5)
+    xp = reg + otp
+else:
+    xp = fh * fr
+print("Pay: ", xp)
